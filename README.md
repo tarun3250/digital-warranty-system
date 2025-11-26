@@ -108,15 +108,10 @@ digital-warranty-system/
 # 🟣 Backend Setup (Node.js + PostgreSQL)
 
 ### 1. Navigate to backend folder
-```sh
 - cd backend
 ### 2. Install dependencies
-sh
-Copy code
-npm install
-3. Create .env in backend
-env
-Copy code
+- npm install
+### 3. Create .env in backend
 DB_HOST=localhost
 DB_PORT=5432
 DB_USER=postgres
@@ -124,90 +119,81 @@ DB_PASS=yourpassword
 DB_NAME=digital_warranty
 JWT_SECRET=your_jwt_secret
 PORT=3001
-4. Create PostgreSQL database
-sql
-Copy code
+### 4. Create PostgreSQL database
 CREATE DATABASE digital_warranty;
-5. Start backend server
-sh
-Copy code
+### 5. Start backend server
 node server.js
+
 Backend runs on:
 
-arduino
-Copy code
 http://localhost:3001
-🔵 Frontend Setup (Next.js)
-1. Navigate to frontend folder
-sh
-Copy code
+
+### 🔵 Frontend Setup (Next.js)
+# 1. Navigate to frontend folder
 cd frontend
-2. Install dependencies
-sh
-Copy code
+
+# 2. Install dependencies
 npm install
-3. Create .env.local
-env
-Copy code
+
+# 3. Create .env.local
 NEXT_PUBLIC_API_URL=http://localhost:3001
-4. Run development server
-sh
-Copy code
+
+# 4. Run development server
 npm run dev
+
 Frontend runs on:
-
-arduino
-Copy code
 http://localhost:3000
-🧠 OCR Workflow (How Bill Extraction Works)
-User uploads bill
 
-Backend saves file using Multer
+### 🧠 OCR Workflow (How Bill Extraction Works)
+- User uploads bill
 
-Tesseract OCR reads the text
+- Backend saves file using Multer
 
-Regex extracts key values
+- Tesseract OCR reads the text
 
-Warranty expiry is calculated
+- Regex extracts key values
 
-Bill details stored in PostgreSQL
+- Warranty expiry is calculated
 
-Dashboard updates instantly
+- Bill details stored in PostgreSQL
 
-🚀 Future Enhancements
+- Dashboard updates instantly
+
+### 🚀 Future Enhancements
 🔮 AI Improvements
-GPT-powered OCR cleanup
+- GPT-powered OCR cleanup
 
-Line-item extraction
+- Line-item extraction
 
-📩 Reminder System Upgrades
+- 📩 Reminder System Upgrades
+
 Email reminders (Nodemailer)
 
 Push notifications
 
 SMS alerts
 
-💾 Cloud Integration
+- 💾 Cloud Integration
 Upload bills to AWS S3
 
 CDN optimization
 
-📊 Analytics Dashboard
+- 📊 Analytics Dashboard
 Monthly bills chart
 
 Spend categories
 
 Warranty distribution
 
-📱 Mobile App (React Native)
+- 📱 Mobile App (React Native)
 Upload bill from camera
 
 Sync with backend
 
-🧑‍💻 Author
-Tarun R
-MCA – MS Ramaiah College
-Full-Stack Developer | Java | DevOps | Next.js
+### 🧑‍💻 Author
+- Tarun R
+- MCA – MS Ramaiah College
+- Full-Stack Developer | Java | DevOps | Next.js
 
 ⭐ Support
 If you find this project useful, consider giving the repository a ⭐ on GitHub!
