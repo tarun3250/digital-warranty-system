@@ -107,11 +107,11 @@ digital-warranty-system/
 
 # 🟣 Backend Setup (Node.js + PostgreSQL)
 
-### 1. Navigate to backend folder
+# 1. Navigate to backend folder
 - cd backend
-### 2. Install dependencies
+# 2. Install dependencies
 - npm install
-### 3. Create .env in backend
+# 3. Create .env in backend
 DB_HOST=localhost
 DB_PORT=5432
 DB_USER=postgres
@@ -119,9 +119,9 @@ DB_PASS=yourpassword
 DB_NAME=digital_warranty
 JWT_SECRET=your_jwt_secret
 PORT=3001
-### 4. Create PostgreSQL database
+# 4. Create PostgreSQL database
 CREATE DATABASE digital_warranty;
-### 5. Start backend server
+# 5. Start backend server
 node server.js
 
 Backend runs on:
